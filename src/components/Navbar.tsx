@@ -15,7 +15,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import ExcelIcon from '../assets/excel.png'
 
 interface RouteProps {
   href: string;
@@ -52,8 +52,10 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ClarFactura
+              <div className="flex gap-2">
+                <img src={ExcelIcon} width={35} height={35} alt="ExcelIcon" />
+                <span className="mt-0.5">ClarFactura</span>
+              </div>
             </a>
           </NavigationMenuItem>
 
