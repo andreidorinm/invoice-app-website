@@ -53,7 +53,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <div className="flex gap-2">
-                <img src={ExcelIcon} width={35} height={35} alt="ExcelIcon" />
+                <img src={ExcelIcon} width={35} alt="ExcelIcon" />
                 <span className="mt-0.5">ClarFactura</span>
               </div>
             </a>
