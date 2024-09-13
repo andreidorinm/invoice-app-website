@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -26,70 +25,37 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Starter",
-    popular: 0,
-    price: 0,
+    title: "Abonament Anual",
+    popular: PopularPlanType.NO,
+    price: 200,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+      "Aveți la dispoziție o perioadă de probă de o lună pentru a testa programul și a vedea cum funcționează.",
+    buttonText: "Începe acum",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Premium",
-    popular: 1,
-    price: 5,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
-    benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Enterprise",
-    popular: 0,
-    price: 40,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
-    benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Acces complet la toate funcționalitățile",
+      "Actualizări periodice",
+      "Suport tehnic prioritar",
+      "Tutoriale și documentație",
+      "Garanție de satisfacție",
     ],
   },
 ];
 
 export const Pricing = () => {
   return (
-    <section
-      id="preturi"
-      className="container py-24 sm:py-32"
-    >
+    <section id="preturi" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Lista
+        Aceasta
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          noastra{" "}
+          este oferta noastră{" "}
         </span>
-        de servicii
+        de preț
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Alege oferta potrivita afacerii tale
+        Oferta este una clară, fără subscripții dificil de gestionat și scumpe
       </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex justify-center">
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
@@ -100,22 +66,13 @@ export const Pricing = () => {
             }
           >
             <CardHeader>
-              <CardTitle className="flex item-center justify-between">
+              <CardTitle className="flex items-center justify-between">
                 {pricing.title}
-                {pricing.popular === PopularPlanType.YES ? (
-                  <Badge
-                    variant="secondary"
-                    className="text-sm text-primary"
-                  >
-                    Most popular
-                  </Badge>
-                ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">RON{" "}{pricing.price}</span>
-                <span className="text-muted-foreground"> /luna</span>
+                <span className="text-3xl font-bold">RON {pricing.price}</span>
+                <span className="text-muted-foreground"> /an</span>
               </div>
-
               <CardDescription>{pricing.description}</CardDescription>
             </CardHeader>
 
@@ -128,10 +85,7 @@ export const Pricing = () => {
             <CardFooter className="flex">
               <div className="space-y-4">
                 {pricing.benefitList.map((benefit: string) => (
-                  <span
-                    key={benefit}
-                    className="flex"
-                  >
+                  <span key={benefit} className="flex">
                     <Check className="text-green-500" />{" "}
                     <h3 className="ml-2">{benefit}</h3>
                   </span>

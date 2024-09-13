@@ -21,7 +21,7 @@ Build your React landing page effortlessly with the required sections to your pr
 - [x] Testimonials
 - [x] Team
 - [x] Pricing
-- [x] Newsletter
+- [x] Contact
 - [x] Frequently Asked Questions(FAQ)
 - [x] Footer
 

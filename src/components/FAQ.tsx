@@ -70,16 +70,6 @@ export const FAQ = () => {
           </AccordionItem>
         ))}
       </Accordion>
-
-      <h3 className="font-medium mt-4">
-        Inca ai intrebari?{" "}
-        <a
-          href="#"
-          className="text-primary transition-all border-primary hover:border-b-2"
-        >
-          Suntem aici
-        </a>
-      </h3>
     </section>
   );
 };

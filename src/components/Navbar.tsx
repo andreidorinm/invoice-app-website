@@ -15,7 +15,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import ExcelIcon from '../assets/excel.png'
+import ExcelIcon from '../assets/excel.ico'
 
 interface RouteProps {
   href: string;

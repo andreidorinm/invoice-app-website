@@ -45,7 +45,7 @@ const featureList: string[] = [
   "Contact form",
   "Our team",
   "Responsive design",
-  "Newsletter",
+  "Contact",
   "Minimalist",
 ];
 

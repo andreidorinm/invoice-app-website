@@ -10,27 +10,27 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accesibility",
+    title: "Accesibil",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Alege tipul de program de facturare",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "Precis",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Încarcă factură de la ANAF primită format XML sau factură în format PDF",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "Rapid",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Procesăm factură rapid și obții fișierul excel dorit",
   },
   {
     icon: <GiftIcon />,
-    title: "Gamification",
+    title: "Simplu",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Acum te poți folosi de fișierul excel în programul de facturare",
   },
 ];
 
@@ -41,17 +41,15 @@ export const HowItWorks = () => {
       className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        Cum{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          funcționează?{" "}
         </span>
-        Step-by-Step Guide
+        Ghidul pas cu pas
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Este simplu și clar
       </p>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (
           <Card
