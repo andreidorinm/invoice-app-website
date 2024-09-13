@@ -77,7 +77,12 @@ export const Pricing = () => {
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
+              <Button
+                className="w-full"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                {pricing.buttonText}
+              </Button>
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />
@@ -98,3 +103,4 @@ export const Pricing = () => {
     </section>
   );
 };
+

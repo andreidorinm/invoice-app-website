@@ -16,12 +16,15 @@ export const Contact = () => {
           <Button
             variant="link"
             className="text-xl flex items-center"
-            onClick={() => window.open("mailto:andrei.dorin00@gmail.com")}
+            onClick={() =>
+              window.open(
+                "https://mail.google.com/mail/?view=cm&fs=1&to=andrei.dorin00@gmail.com"
+              )
+            }
           >
             <Mail className="mr-2" />
             andrei.dorin00@gmail.com
           </Button>
-
         </div>
       </div>
 
