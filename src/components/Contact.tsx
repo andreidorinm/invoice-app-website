@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react"; // Import the email icon
+import { Mail, Linkedin, Github } from "lucide-react"; // Import the icons
 import { Button } from "./ui/button";
 
 export const Contact = () => {
@@ -12,7 +12,8 @@ export const Contact = () => {
           Suntem aici pentru a vă ajuta. Nu ezitați să ne contactați!
         </p>
 
-        <div className="flex flex-col items-center">
+        {/* Flexbox to align the buttons in a row */}
+        <div className="flex justify-center space-x-6">
           <Button
             variant="link"
             className="text-xl flex items-center"
@@ -24,6 +25,26 @@ export const Contact = () => {
           >
             <Mail className="mr-2" />
             andrei.dorin00@gmail.com
+          </Button>
+
+          <Button
+            variant="link"
+            className="text-xl flex items-center"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/andrei-mihaila-b75798211/")
+            }
+          >
+            <Linkedin className="mr-2" />
+            LinkedIn
+          </Button>
+
+          <Button
+            variant="link"
+            className="text-xl flex items-center"
+            onClick={() => window.open("https://github.com/andreidorinm/invoice-app")}
+          >
+            <Github className="mr-2" />
+            GitHub
           </Button>
         </div>
       </div>

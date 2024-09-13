@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
               ClarFactura
             </span>{" "}
             evident
@@ -25,9 +25,9 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Descarca</Button>
-
-
+          <a href="https://clarfactura.b-cdn.net/ClarFactura%20in%20NIR-Windows.exe" download>
+            <Button className="w-full md:w-1/3">Descarcă</Button>
+          </a>
         </div>
       </div>
 

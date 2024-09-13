@@ -7,7 +7,7 @@ import { Navbar } from "./components/Navbar";
 import { Contact } from "./components/Contact";
 import { Pricing } from "./components/Pricing";
 import { ScrollToTop } from "./components/ScrollToTop";
-// import { Sponsors } from "./components/Sponsors";
+import { Sponsors } from "./components/Sponsors";
 import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 
@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      {/* <Sponsors /> */}
+      <Sponsors />
       <HowItWorks />
       <Pricing />
       <Testimonials />
